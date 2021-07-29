@@ -1,0 +1,6 @@
+framework module Pods_IOS_Task_Softxpert {
+  umbrella header "Pods-IOS Task-Softxpert-umbrella.h"
+
+  export *
+  module * { export * }
+}
