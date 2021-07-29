@@ -3,18 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3CE838C07988D598A33E2CA1 /* Pods_IOS_Task_Softxpert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8B0483F0CE2A3AB4D4E02E1 /* Pods_IOS_Task_Softxpert.framework */; };
 		7C75D41B26B287F6005296BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75D41A26B287F6005296BB /* AppDelegate.swift */; };
-		7C75D41D26B287F6005296BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75D41C26B287F6005296BB /* SceneDelegate.swift */; };
-		7C75D41F26B287F6005296BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75D41E26B287F6005296BB /* ViewController.swift */; };
 		7C75D42226B287F6005296BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C75D42026B287F6005296BB /* Main.storyboard */; };
 		7C75D42426B287FA005296BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C75D42326B287FA005296BB /* Assets.xcassets */; };
 		7C75D42726B287FA005296BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C75D42526B287FA005296BB /* LaunchScreen.storyboard */; };
 		7C75D43226B287FA005296BB /* IOS_Task_SoftxpertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75D43126B287FA005296BB /* IOS_Task_SoftxpertTests.swift */; };
 		7C75D43D26B287FA005296BB /* IOS_Task_SoftxpertUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75D43C26B287FA005296BB /* IOS_Task_SoftxpertUITests.swift */; };
+		7C75D45826B29D7B005296BB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75D45726B29D7B005296BB /* SearchViewController.swift */; };
+		D94C03E17911B3CA459531F5 /* Pods_IOS_Task_Softxpert_IOS_Task_SoftxpertUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAB554D21E3BE1DF7EA7957 /* Pods_IOS_Task_Softxpert_IOS_Task_SoftxpertUITests.framework */; };
+		E66167D4E2E11E8D1E99984F /* Pods_IOS_Task_SoftxpertTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C48C6D4C2D73A500CE0747A /* Pods_IOS_Task_SoftxpertTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +37,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C1E85E66655011EABCC7C3F /* Pods-IOS Task-SoftxpertTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS Task-SoftxpertTests.debug.xcconfig"; path = "Target Support Files/Pods-IOS Task-SoftxpertTests/Pods-IOS Task-SoftxpertTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0C48C6D4C2D73A500CE0747A /* Pods_IOS_Task_SoftxpertTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_Task_SoftxpertTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1002C6C68D6C732F28FF6303 /* Pods-IOS Task-Softxpert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS Task-Softxpert.release.xcconfig"; path = "Target Support Files/Pods-IOS Task-Softxpert/Pods-IOS Task-Softxpert.release.xcconfig"; sourceTree = "<group>"; };
+		34459663DF13B6C0DFC6B5EA /* Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests.debug.xcconfig"; path = "Target Support Files/Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests/Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4BAB554D21E3BE1DF7EA7957 /* Pods_IOS_Task_Softxpert_IOS_Task_SoftxpertUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_Task_Softxpert_IOS_Task_SoftxpertUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60B929F855BC08293FD3F39A /* Pods-IOS Task-SoftxpertTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS Task-SoftxpertTests.release.xcconfig"; path = "Target Support Files/Pods-IOS Task-SoftxpertTests/Pods-IOS Task-SoftxpertTests.release.xcconfig"; sourceTree = "<group>"; };
 		7C75D41726B287F6005296BB /* IOS Task-Softxpert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS Task-Softxpert.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C75D41A26B287F6005296BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7C75D41C26B287F6005296BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7C75D41E26B287F6005296BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7C75D42126B287F6005296BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C75D42326B287FA005296BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C75D42626B287FA005296BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +55,10 @@
 		7C75D43826B287FA005296BB /* IOS Task-SoftxpertUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IOS Task-SoftxpertUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C75D43C26B287FA005296BB /* IOS_Task_SoftxpertUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_Task_SoftxpertUITests.swift; sourceTree = "<group>"; };
 		7C75D43E26B287FA005296BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C75D45726B29D7B005296BB /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		98CF82B6A198E35357F3CFC4 /* Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests.release.xcconfig"; path = "Target Support Files/Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests/Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B8B0483F0CE2A3AB4D4E02E1 /* Pods_IOS_Task_Softxpert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_Task_Softxpert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBB826B672DD4C0B97D8C08E /* Pods-IOS Task-Softxpert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS Task-Softxpert.debug.xcconfig"; path = "Target Support Files/Pods-IOS Task-Softxpert/Pods-IOS Task-Softxpert.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CE838C07988D598A33E2CA1 /* Pods_IOS_Task_Softxpert.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E66167D4E2E11E8D1E99984F /* Pods_IOS_Task_SoftxpertTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +82,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D94C03E17911B3CA459531F5 /* Pods_IOS_Task_Softxpert_IOS_Task_SoftxpertUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68896DB356FE302EEF944459 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8B0483F0CE2A3AB4D4E02E1 /* Pods_IOS_Task_Softxpert.framework */,
+				4BAB554D21E3BE1DF7EA7957 /* Pods_IOS_Task_Softxpert_IOS_Task_SoftxpertUITests.framework */,
+				0C48C6D4C2D73A500CE0747A /* Pods_IOS_Task_SoftxpertTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7C75D40E26B287F6005296BB = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +106,8 @@
 				7C75D43026B287FA005296BB /* IOS Task-SoftxpertTests */,
 				7C75D43B26B287FA005296BB /* IOS Task-SoftxpertUITests */,
 				7C75D41826B287F6005296BB /* Products */,
+				FAB39B5336619284FED35D32 /* Pods */,
+				68896DB356FE302EEF944459 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +124,17 @@
 		7C75D41926B287F6005296BB /* IOS Task-Softxpert */ = {
 			isa = PBXGroup;
 			children = (
-				7C75D41A26B287F6005296BB /* AppDelegate.swift */,
-				7C75D41C26B287F6005296BB /* SceneDelegate.swift */,
-				7C75D41E26B287F6005296BB /* ViewController.swift */,
-				7C75D42026B287F6005296BB /* Main.storyboard */,
-				7C75D42326B287FA005296BB /* Assets.xcassets */,
-				7C75D42526B287FA005296BB /* LaunchScreen.storyboard */,
-				7C75D42826B287FA005296BB /* Info.plist */,
+				7C75D44F26B29B01005296BB /* ViewController */,
+				7C75D45426B29C2D005296BB /* Presenter */,
+				7C75D45626B29C76005296BB /* Interactor */,
+				7C75D45526B29C3C005296BB /* Router */,
+				7C75D45326B29BDA005296BB /* Contracts */,
+				7C75D44D26B29AE4005296BB /* View */,
+				7C75D45126B29B8B005296BB /* Model */,
+				7C75D45026B29B5E005296BB /* POJOs */,
+				7C75D44C26B29A59005296BB /* Core */,
+				7C75D44B26B29A39005296BB /* Resources */,
+				7C75D44A26B29A27005296BB /* Configration */,
 			);
 			path = "IOS Task-Softxpert";
 			sourceTree = "<group>";
@@ -128,6 +157,110 @@
 			path = "IOS Task-SoftxpertUITests";
 			sourceTree = "<group>";
 		};
+		7C75D44A26B29A27005296BB /* Configration */ = {
+			isa = PBXGroup;
+			children = (
+				7C75D42826B287FA005296BB /* Info.plist */,
+			);
+			path = Configration;
+			sourceTree = "<group>";
+		};
+		7C75D44B26B29A39005296BB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7C75D42326B287FA005296BB /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7C75D44C26B29A59005296BB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7C75D41A26B287F6005296BB /* AppDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		7C75D44D26B29AE4005296BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7C75D42026B287F6005296BB /* Main.storyboard */,
+				7C75D42526B287FA005296BB /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7C75D44F26B29B01005296BB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7C75D45726B29D7B005296BB /* SearchViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7C75D45026B29B5E005296BB /* POJOs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = POJOs;
+			sourceTree = "<group>";
+		};
+		7C75D45126B29B8B005296BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7C75D45226B29B97005296BB /* NetworkModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7C75D45226B29B97005296BB /* NetworkModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkModel;
+			sourceTree = "<group>";
+		};
+		7C75D45326B29BDA005296BB /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Contracts;
+			sourceTree = "<group>";
+		};
+		7C75D45426B29C2D005296BB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7C75D45526B29C3C005296BB /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		7C75D45626B29C76005296BB /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FAB39B5336619284FED35D32 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EBB826B672DD4C0B97D8C08E /* Pods-IOS Task-Softxpert.debug.xcconfig */,
+				1002C6C68D6C732F28FF6303 /* Pods-IOS Task-Softxpert.release.xcconfig */,
+				34459663DF13B6C0DFC6B5EA /* Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests.debug.xcconfig */,
+				98CF82B6A198E35357F3CFC4 /* Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests.release.xcconfig */,
+				0C1E85E66655011EABCC7C3F /* Pods-IOS Task-SoftxpertTests.debug.xcconfig */,
+				60B929F855BC08293FD3F39A /* Pods-IOS Task-SoftxpertTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +268,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C75D44126B287FA005296BB /* Build configuration list for PBXNativeTarget "IOS Task-Softxpert" */;
 			buildPhases = (
+				EE14C593BB76994DAE023DFA /* [CP] Check Pods Manifest.lock */,
 				7C75D41326B287F6005296BB /* Sources */,
 				7C75D41426B287F6005296BB /* Frameworks */,
 				7C75D41526B287F6005296BB /* Resources */,
+				9C8C2E30827608D0D3EB3BC1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +287,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C75D44426B287FA005296BB /* Build configuration list for PBXNativeTarget "IOS Task-SoftxpertTests" */;
 			buildPhases = (
+				02CEAE200A22585F1B7F6027 /* [CP] Check Pods Manifest.lock */,
 				7C75D42926B287FA005296BB /* Sources */,
 				7C75D42A26B287FA005296BB /* Frameworks */,
 				7C75D42B26B287FA005296BB /* Resources */,
@@ -170,9 +306,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C75D44726B287FA005296BB /* Build configuration list for PBXNativeTarget "IOS Task-SoftxpertUITests" */;
 			buildPhases = (
+				5D28000BD808380CC6E566F7 /* [CP] Check Pods Manifest.lock */,
 				7C75D43426B287FA005296BB /* Sources */,
 				7C75D43526B287FA005296BB /* Frameworks */,
 				7C75D43626B287FA005296BB /* Resources */,
+				F64656F37605935A4BEF9C8A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,14 +391,116 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02CEAE200A22585F1B7F6027 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IOS Task-SoftxpertTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D28000BD808380CC6E566F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C8C2E30827608D0D3EB3BC1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IOS Task-Softxpert/Pods-IOS Task-Softxpert-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IOS Task-Softxpert/Pods-IOS Task-Softxpert-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IOS Task-Softxpert/Pods-IOS Task-Softxpert-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE14C593BB76994DAE023DFA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IOS Task-Softxpert-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F64656F37605935A4BEF9C8A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests/Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests/Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests/Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7C75D41326B287F6005296BB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C75D41F26B287F6005296BB /* ViewController.swift in Sources */,
+				7C75D45826B29D7B005296BB /* SearchViewController.swift in Sources */,
 				7C75D41B26B287F6005296BB /* AppDelegate.swift in Sources */,
-				7C75D41D26B287F6005296BB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,11 +673,14 @@
 		};
 		7C75D44226B287FA005296BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBB826B672DD4C0B97D8C08E /* Pods-IOS Task-Softxpert.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "IOS Task-Softxpert/Info.plist";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/IOS Task-Softxpert/Configration/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,11 +694,14 @@
 		};
 		7C75D44326B287FA005296BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1002C6C68D6C732F28FF6303 /* Pods-IOS Task-Softxpert.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "IOS Task-Softxpert/Info.plist";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/IOS Task-Softxpert/Configration/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -469,6 +715,7 @@
 		};
 		7C75D44526B287FA005296BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C1E85E66655011EABCC7C3F /* Pods-IOS Task-SoftxpertTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +737,7 @@
 		};
 		7C75D44626B287FA005296BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60B929F855BC08293FD3F39A /* Pods-IOS Task-SoftxpertTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +759,7 @@
 		};
 		7C75D44826B287FA005296BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34459663DF13B6C0DFC6B5EA /* Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +779,7 @@
 		};
 		7C75D44926B287FA005296BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98CF82B6A198E35357F3CFC4 /* Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
