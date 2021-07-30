@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3CE838C07988D598A33E2CA1 /* Pods_IOS_Task_Softxpert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8B0483F0CE2A3AB4D4E02E1 /* Pods_IOS_Task_Softxpert.framework */; };
+		7C4045D126B45D250061E6FC /* SearchNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4045D026B45D240061E6FC /* SearchNetwork.swift */; };
 		7C75D41B26B287F6005296BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75D41A26B287F6005296BB /* AppDelegate.swift */; };
 		7C75D42226B287F6005296BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C75D42026B287F6005296BB /* Main.storyboard */; };
 		7C75D42426B287FA005296BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C75D42326B287FA005296BB /* Assets.xcassets */; };
@@ -15,6 +16,20 @@
 		7C75D43226B287FA005296BB /* IOS_Task_SoftxpertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75D43126B287FA005296BB /* IOS_Task_SoftxpertTests.swift */; };
 		7C75D43D26B287FA005296BB /* IOS_Task_SoftxpertUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75D43C26B287FA005296BB /* IOS_Task_SoftxpertUITests.swift */; };
 		7C75D45826B29D7B005296BB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75D45726B29D7B005296BB /* SearchViewController.swift */; };
+		7C75D45B26B2C331005296BB /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75D45A26B2C331005296BB /* SearchTableViewCell.swift */; };
+		7C75D45D26B2CC9D005296BB /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75D45C26B2CC9D005296BB /* Recipe.swift */; };
+		7C75D46326B2E943005296BB /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75D46226B2E943005296BB /* Constant.swift */; };
+		7C75D46B26B2F1EC005296BB /* SearchRouterNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75D46A26B2F1EC005296BB /* SearchRouterNetwork.swift */; };
+		7C75D46D26B2FCB2005296BB /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75D46C26B2FCB2005296BB /* NetworkLayer.swift */; };
+		7C75D46F26B303DF005296BB /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75D46E26B303DF005296BB /* SearchPresenter.swift */; };
+		7C75D47126B30465005296BB /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75D47026B30465005296BB /* SearchInteractor.swift */; };
+		7C75D47326B3049B005296BB /* SearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75D47226B3049B005296BB /* SearchRouter.swift */; };
+		7C75D47526B305A4005296BB /* SearchRecipeView.Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75D47426B305A4005296BB /* SearchRecipeView.Protocol.swift */; };
+		7C75D47726B305DC005296BB /* SearchRecipePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75D47626B305DC005296BB /* SearchRecipePresenterProtocol.swift */; };
+		7C75D47926B30637005296BB /* SearchRecipeRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75D47826B30637005296BB /* SearchRecipeRouterProtocol.swift */; };
+		7C75D47B26B30667005296BB /* SearchRecipeInteractorInputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75D47A26B30667005296BB /* SearchRecipeInteractorInputProtocol.swift */; };
+		7C75D47E26B306BC005296BB /* SearchRecipeInteractorOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75D47D26B306BC005296BB /* SearchRecipeInteractorOutputProtocol.swift */; };
+		7C75D48026B30738005296BB /* SearchRecipeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75D47F26B30738005296BB /* SearchRecipeCellView.swift */; };
 		D94C03E17911B3CA459531F5 /* Pods_IOS_Task_Softxpert_IOS_Task_SoftxpertUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAB554D21E3BE1DF7EA7957 /* Pods_IOS_Task_Softxpert_IOS_Task_SoftxpertUITests.framework */; };
 		E66167D4E2E11E8D1E99984F /* Pods_IOS_Task_SoftxpertTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C48C6D4C2D73A500CE0747A /* Pods_IOS_Task_SoftxpertTests.framework */; };
 /* End PBXBuildFile section */
@@ -43,6 +58,7 @@
 		34459663DF13B6C0DFC6B5EA /* Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests.debug.xcconfig"; path = "Target Support Files/Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests/Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4BAB554D21E3BE1DF7EA7957 /* Pods_IOS_Task_Softxpert_IOS_Task_SoftxpertUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_Task_Softxpert_IOS_Task_SoftxpertUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60B929F855BC08293FD3F39A /* Pods-IOS Task-SoftxpertTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS Task-SoftxpertTests.release.xcconfig"; path = "Target Support Files/Pods-IOS Task-SoftxpertTests/Pods-IOS Task-SoftxpertTests.release.xcconfig"; sourceTree = "<group>"; };
+		7C4045D026B45D240061E6FC /* SearchNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNetwork.swift; sourceTree = "<group>"; };
 		7C75D41726B287F6005296BB /* IOS Task-Softxpert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS Task-Softxpert.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C75D41A26B287F6005296BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C75D42126B287F6005296BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -56,6 +72,20 @@
 		7C75D43C26B287FA005296BB /* IOS_Task_SoftxpertUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_Task_SoftxpertUITests.swift; sourceTree = "<group>"; };
 		7C75D43E26B287FA005296BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C75D45726B29D7B005296BB /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		7C75D45A26B2C331005296BB /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		7C75D45C26B2CC9D005296BB /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = ../../../../../Recipe.swift; sourceTree = "<group>"; };
+		7C75D46226B2E943005296BB /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		7C75D46A26B2F1EC005296BB /* SearchRouterNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRouterNetwork.swift; sourceTree = "<group>"; };
+		7C75D46C26B2FCB2005296BB /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		7C75D46E26B303DF005296BB /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		7C75D47026B30465005296BB /* SearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
+		7C75D47226B3049B005296BB /* SearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRouter.swift; sourceTree = "<group>"; };
+		7C75D47426B305A4005296BB /* SearchRecipeView.Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipeView.Protocol.swift; sourceTree = "<group>"; };
+		7C75D47626B305DC005296BB /* SearchRecipePresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipePresenterProtocol.swift; sourceTree = "<group>"; };
+		7C75D47826B30637005296BB /* SearchRecipeRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipeRouterProtocol.swift; sourceTree = "<group>"; };
+		7C75D47A26B30667005296BB /* SearchRecipeInteractorInputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipeInteractorInputProtocol.swift; sourceTree = "<group>"; };
+		7C75D47D26B306BC005296BB /* SearchRecipeInteractorOutputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipeInteractorOutputProtocol.swift; sourceTree = "<group>"; };
+		7C75D47F26B30738005296BB /* SearchRecipeCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipeCellView.swift; sourceTree = "<group>"; };
 		98CF82B6A198E35357F3CFC4 /* Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests.release.xcconfig"; path = "Target Support Files/Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests/Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B8B0483F0CE2A3AB4D4E02E1 /* Pods_IOS_Task_Softxpert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_Task_Softxpert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB826B672DD4C0B97D8C08E /* Pods-IOS Task-Softxpert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS Task-Softxpert.debug.xcconfig"; path = "Target Support Files/Pods-IOS Task-Softxpert/Pods-IOS Task-Softxpert.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +162,7 @@
 				7C75D44D26B29AE4005296BB /* View */,
 				7C75D45126B29B8B005296BB /* Model */,
 				7C75D45026B29B5E005296BB /* POJOs */,
+				7C75D46126B2E8A2005296BB /* Constains */,
 				7C75D44C26B29A59005296BB /* Core */,
 				7C75D44B26B29A39005296BB /* Resources */,
 				7C75D44A26B29A27005296BB /* Configration */,
@@ -194,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				7C75D45726B29D7B005296BB /* SearchViewController.swift */,
+				7C75D45926B2C2E9005296BB /* Cells */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -201,6 +233,7 @@
 		7C75D45026B29B5E005296BB /* POJOs */ = {
 			isa = PBXGroup;
 			children = (
+				7C75D45C26B2CC9D005296BB /* Recipe.swift */,
 			);
 			path = POJOs;
 			sourceTree = "<group>";
@@ -216,6 +249,9 @@
 		7C75D45226B29B97005296BB /* NetworkModel */ = {
 			isa = PBXGroup;
 			children = (
+				7C4045D026B45D240061E6FC /* SearchNetwork.swift */,
+				7C75D46C26B2FCB2005296BB /* NetworkLayer.swift */,
+				7C75D46A26B2F1EC005296BB /* SearchRouterNetwork.swift */,
 			);
 			path = NetworkModel;
 			sourceTree = "<group>";
@@ -223,6 +259,12 @@
 		7C75D45326B29BDA005296BB /* Contracts */ = {
 			isa = PBXGroup;
 			children = (
+				7C75D47426B305A4005296BB /* SearchRecipeView.Protocol.swift */,
+				7C75D47626B305DC005296BB /* SearchRecipePresenterProtocol.swift */,
+				7C75D47826B30637005296BB /* SearchRecipeRouterProtocol.swift */,
+				7C75D47A26B30667005296BB /* SearchRecipeInteractorInputProtocol.swift */,
+				7C75D47D26B306BC005296BB /* SearchRecipeInteractorOutputProtocol.swift */,
+				7C75D47F26B30738005296BB /* SearchRecipeCellView.swift */,
 			);
 			path = Contracts;
 			sourceTree = "<group>";
@@ -230,6 +272,7 @@
 		7C75D45426B29C2D005296BB /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				7C75D46E26B303DF005296BB /* SearchPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -237,6 +280,7 @@
 		7C75D45526B29C3C005296BB /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				7C75D47226B3049B005296BB /* SearchRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -244,8 +288,25 @@
 		7C75D45626B29C76005296BB /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				7C75D47026B30465005296BB /* SearchInteractor.swift */,
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		7C75D45926B2C2E9005296BB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7C75D45A26B2C331005296BB /* SearchTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		7C75D46126B2E8A2005296BB /* Constains */ = {
+			isa = PBXGroup;
+			children = (
+				7C75D46226B2E943005296BB /* Constant.swift */,
+			);
+			path = Constains;
 			sourceTree = "<group>";
 		};
 		FAB39B5336619284FED35D32 /* Pods */ = {
@@ -499,8 +560,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C75D47E26B306BC005296BB /* SearchRecipeInteractorOutputProtocol.swift in Sources */,
+				7C75D45B26B2C331005296BB /* SearchTableViewCell.swift in Sources */,
 				7C75D45826B29D7B005296BB /* SearchViewController.swift in Sources */,
 				7C75D41B26B287F6005296BB /* AppDelegate.swift in Sources */,
+				7C75D47126B30465005296BB /* SearchInteractor.swift in Sources */,
+				7C75D47526B305A4005296BB /* SearchRecipeView.Protocol.swift in Sources */,
+				7C75D46D26B2FCB2005296BB /* NetworkLayer.swift in Sources */,
+				7C75D47926B30637005296BB /* SearchRecipeRouterProtocol.swift in Sources */,
+				7C75D45D26B2CC9D005296BB /* Recipe.swift in Sources */,
+				7C75D47326B3049B005296BB /* SearchRouter.swift in Sources */,
+				7C75D46326B2E943005296BB /* Constant.swift in Sources */,
+				7C75D46F26B303DF005296BB /* SearchPresenter.swift in Sources */,
+				7C75D47726B305DC005296BB /* SearchRecipePresenterProtocol.swift in Sources */,
+				7C75D46B26B2F1EC005296BB /* SearchRouterNetwork.swift in Sources */,
+				7C75D48026B30738005296BB /* SearchRecipeCellView.swift in Sources */,
+				7C75D47B26B30667005296BB /* SearchRecipeInteractorInputProtocol.swift in Sources */,
+				7C4045D126B45D250061E6FC /* SearchNetwork.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,7 +682,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -661,7 +737,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
