@@ -10,6 +10,7 @@ import UIKit
 class SearchViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
     
     var presenter: SearchRecipePresenterProtocol!
+    var pathDelegate : UrlDataProtocol?
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var searchTableView: UITableView!
@@ -19,11 +20,30 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         searchTableView.dataSource = self
         searchTableView.delegate = self
         searchBar.delegate = self
-        presenter.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
+        // presenter.viewDidLoad()
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
+        
+        
+    }
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        do {
+            let input = searchBar.text!
+            let regex = try NSRegularExpression(pattern: ".*[^A-Za-z ].*", options: [])
+            if regex.firstMatch(in: input, options: [], range: NSMakeRange(0, searchBar.text!.count)) == nil {
+                presenter.query = input.components(separatedBy: " ")
+                presenter.viewDidLoad()
+                searchTableView.reloadData()
+            } else {
+                print("Only English Letter and Space are Allowed")
+            }
+        }
+        catch {
+            print("")
+        }
     }
     
     @IBAction func didChangeFilterSegment(_ sender: UISegmentedControl) {
@@ -54,8 +74,8 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
 }
 
 extension SearchViewController: SearchRecipeViewProtocol{
-
-        
+    
+    
     func showLoadingIndicator() {
         print("Should Show User indecator")
         //Implement any loading indecator
@@ -69,4 +89,16 @@ extension SearchViewController: SearchRecipeViewProtocol{
         searchTableView.reloadData()
     }
     
+}
+
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }

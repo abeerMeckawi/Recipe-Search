@@ -13,12 +13,11 @@ class SearchPresenter: SearchRecipePresenterProtocol, SearchRecipeInteractorOutp
     private let interactor : SearchRecipeInteractorInputProtocol
     private let router: SearchRecipeRouterProtocol
     private var hits = [Hits]()
+    var query = [String]()
     
     var numberOfRows: Int {
         return hits.count
     }
-    
-    // retuen recipes.count
     
     init(view: SearchRecipeViewProtocol, interactor: SearchRecipeInteractorInputProtocol, router: SearchRecipeRouterProtocol) {
         self.view = view
@@ -28,11 +27,10 @@ class SearchPresenter: SearchRecipePresenterProtocol, SearchRecipeInteractorOutp
     
     func viewDidLoad() {
         view?.showLoadingIndicator()
-        interactor.getRecipes()
+        interactor.getRecipes(query: query)
     }
 
     func searchFetchedSuccessfully(hits: [Hits]) {
-        print(hits.count)
         view?.hideLoadingIndicator()
         self.hits.append(contentsOf: hits)
         view?.reloadData()

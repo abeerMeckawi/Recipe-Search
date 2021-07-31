@@ -10,7 +10,8 @@ import Alamofire
 
 enum SearchRouterNetwork{
     
-    case getRecipe
+    case getRecipe(query:[String])
+    
 }
 extension SearchRouterNetwork: URLRequestConvertible {
     
@@ -28,35 +29,22 @@ extension SearchRouterNetwork: URLRequestConvertible {
         }
     }
     
-    /* var url: URL {
-     let relativePath : String?
-     switch self {
-     case .getRecipe:
-     relativePath = Constant.pathURL
-     }
-     
-     var url = URL(string: Constant.baseURL)!
-     if let relativePath = relativePath {
-     url = url.appendingPathComponent(relativePath)
-     print(url.relativePath)
-     }
-     return url
-     }*/
     var url :URL{
+        
         let urlComponents = NSURLComponents(string: Constant.baseURL)!
-        
-        urlComponents.queryItems = [
-            URLQueryItem(name: "type", value: "public"),
-            URLQueryItem(name: "q", value: "chicken"),
-            URLQueryItem(name: "app_id", value: Constant.appId),
-            URLQueryItem(name: "app_key", value: Constant.app_key),
-            URLQueryItem(name: "health", value: "low-sugar")
-            
-        ]
+        switch self{
+        case .getRecipe(let query):
+            urlComponents.queryItems = [
+                URLQueryItem(name: "type", value: "public"),
+                URLQueryItem(name: "q", value: query.joined(separator: " ")),
+                URLQueryItem(name: "app_id", value: Constant.appId),
+                URLQueryItem(name: "app_key", value: Constant.app_key),
+                //  URLQueryItem(name: "health", value: "low-sugar")
+            ]
+        }
         return urlComponents.url!// returns
-        
     }
-
+    
     var encoding: ParameterEncoding {
         return JSONEncoding.default
     }

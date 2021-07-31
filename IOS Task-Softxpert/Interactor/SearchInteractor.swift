@@ -12,8 +12,8 @@ class SearchInteractor: SearchRecipeInteractorInputProtocol{
     weak var presenter:SearchRecipeInteractorOutputProtocol?
     private let searchNetwork = SearchNetwork()
     
-    func getRecipes() {
-        searchNetwork.getRecipes { [weak self] result in
+    func getRecipes(query:[String]) {
+        searchNetwork.getRecipes(query: query) { [weak self] result in
             guard let self = self else { return }
             switch result {
             case .success(let food):

@@ -10,7 +10,7 @@ import Foundation
 protocol SearchRecipeInteractorInputProtocol{
     
     var presenter: SearchRecipeInteractorOutputProtocol? { get set }
-    func getRecipes()
+    func getRecipes(query:[String])
 }
 
 
