@@ -10,7 +10,7 @@ import UIKit
 class SearchViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
     
     var presenter: SearchRecipePresenterProtocol!
-    var pathDelegate : UrlDataProtocol?
+  
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var searchTableView: UITableView!
