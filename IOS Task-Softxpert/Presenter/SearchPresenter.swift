@@ -8,14 +8,14 @@
 import Foundation
 
 class SearchPresenter: SearchRecipePresenterProtocol, SearchRecipeInteractorOutputProtocol{
-    
+
     weak var view: SearchRecipeViewProtocol?
     private let interactor : SearchRecipeInteractorInputProtocol
     private let router: SearchRecipeRouterProtocol
-    private var recipes = [Recipe]()
+    private var hits = [Hits]()
     
     var numberOfRows: Int {
-        return recipes.count
+        return hits.count
     }
     
     // retuen recipes.count
@@ -30,10 +30,11 @@ class SearchPresenter: SearchRecipePresenterProtocol, SearchRecipeInteractorOutp
         view?.showLoadingIndicator()
         interactor.getRecipes()
     }
-    
-    func searchFetchedSuccessfully(recipes: [Recipe]) {
+
+    func searchFetchedSuccessfully(hits: [Hits]) {
+        print(hits.count)
         view?.hideLoadingIndicator()
-        self.recipes.append(contentsOf: recipes)
+        self.hits.append(contentsOf: hits)
         view?.reloadData()
     }
     
@@ -43,8 +44,8 @@ class SearchPresenter: SearchRecipePresenterProtocol, SearchRecipeInteractorOutp
     }
     
     func configure(cell: SearchRecipeCellView, indexPath: IndexPath) {
-        let recipe = recipes[indexPath.row]
-        let viewModel = SearchViewModel(recipe: recipe)
+        let hit = hits[indexPath.row]
+        let viewModel = SearchViewModel(hit: hit)
         cell.configure(viewModel: viewModel)
         
     }

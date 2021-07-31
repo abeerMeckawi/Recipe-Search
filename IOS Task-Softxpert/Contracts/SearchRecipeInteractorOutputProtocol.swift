@@ -9,6 +9,6 @@ import Foundation
 
 protocol SearchRecipeInteractorOutputProtocol : AnyObject{
     
-    func searchFetchedSuccessfully(recipes: [Recipe])
+    func searchFetchedSuccessfully(hits: [Hits])
     func searchFetchingFailed(withError error: Error)
 }

@@ -11,7 +11,7 @@ class SearchNetwork {
     
     private let networkLayer = NetworkLayer()
     
-    func getRecipes(completion: @escaping (Result<[Recipe]>) -> ()) {
-        networkLayer.request(SearchRouterNetwork.getRecipe, decodeToType: [Recipe].self, completion: completion)
+    func getRecipes(completion: @escaping (Result<Food>) -> ()) {
+        networkLayer.request(SearchRouterNetwork.getRecipe, decodeToType: Food.self, completion: completion)
     }
 }

@@ -13,7 +13,7 @@ enum SearchRouterNetwork{
     case getRecipe
 }
 extension SearchRouterNetwork: URLRequestConvertible {
-
+    
     var method: HTTPMethod {
         switch self {
         case .getRecipe:
@@ -28,20 +28,35 @@ extension SearchRouterNetwork: URLRequestConvertible {
         }
     }
     
-    var url: URL {
-        let relativePath : String?
-        switch self {
-        case .getRecipe:
-            relativePath = Constant.pathURL
-        }
+    /* var url: URL {
+     let relativePath : String?
+     switch self {
+     case .getRecipe:
+     relativePath = Constant.pathURL
+     }
+     
+     var url = URL(string: Constant.baseURL)!
+     if let relativePath = relativePath {
+     url = url.appendingPathComponent(relativePath)
+     print(url.relativePath)
+     }
+     return url
+     }*/
+    var url :URL{
+        let urlComponents = NSURLComponents(string: Constant.baseURL)!
         
-        var url = URL(string: Constant.baseURL)!
-        if let relativePath = relativePath {
-            url = url.appendingPathComponent(relativePath)
-        }
-        return url
+        urlComponents.queryItems = [
+            URLQueryItem(name: "type", value: "public"),
+            URLQueryItem(name: "q", value: "chicken"),
+            URLQueryItem(name: "app_id", value: Constant.appId),
+            URLQueryItem(name: "app_key", value: Constant.app_key),
+            URLQueryItem(name: "health", value: "low-sugar")
+            
+        ]
+        return urlComponents.url!// returns
+        
     }
-    
+
     var encoding: ParameterEncoding {
         return JSONEncoding.default
     }
