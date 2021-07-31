@@ -10,7 +10,7 @@ import UIKit
 class SearchViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
     
     var presenter: SearchRecipePresenterProtocol!
-  
+    
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var searchTableView: UITableView!
@@ -33,25 +33,41 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         do {
             let input = searchBar.text!
             let regex = try NSRegularExpression(pattern: ".*[^A-Za-z ].*", options: [])
-            if regex.firstMatch(in: input, options: [], range: NSMakeRange(0, searchBar.text!.count)) == nil {
-                presenter.query = input.components(separatedBy: " ")
+            if regex.firstMatch(in: input, options: [], range: NSMakeRange(0, searchBar.text!.count)) == nil{
+                if !input.isEmpty {
+                    presenter.query = input.components(separatedBy: " ")
+                    
+                }else{
+                    createAlert(message: "Enter Your Recipe For Search")
+                }
                 presenter.viewDidLoad()
-                searchTableView.reloadData()
-            } else {
-                print("Only English Letter and Space are Allowed")
+            }else {
+                createAlert(message: "Only English Letter and Space are Allowed")
             }
         }
         catch {
-            print("")
+            print("error")
         }
     }
     
     @IBAction func didChangeFilterSegment(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
-        case 0: break
-        case 2: break
-        case 3: break
-        case 4: break
+        case 0:
+            presenter.health = "all"
+            presenter.viewDidLoad()
+            break
+        case 1:
+            presenter.health = "low-sugar"
+            presenter.viewDidLoad()
+            break
+        case 2:
+            presenter.health = "keto-friendly"
+            presenter.viewDidLoad()
+            break
+        case 3:
+            presenter.health = "vegan"
+            presenter.viewDidLoad()
+            break
         default:
             break
         }
@@ -87,6 +103,12 @@ extension SearchViewController: SearchRecipeViewProtocol{
     
     func reloadData() {
         searchTableView.reloadData()
+    }
+    
+    func createAlert(message : String) {
+        let alertController = UIAlertController(title: "Alert", message:message, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "OK",style: .default))
+        self.present(alertController, animated: true, completion: nil)
     }
     
 }

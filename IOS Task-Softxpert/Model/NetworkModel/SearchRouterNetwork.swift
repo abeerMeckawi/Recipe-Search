@@ -10,7 +10,7 @@ import Alamofire
 
 enum SearchRouterNetwork{
     
-    case getRecipe(query:[String])
+    case getRecipe(query:[String],health:String)
     
 }
 extension SearchRouterNetwork: URLRequestConvertible {
@@ -33,16 +33,20 @@ extension SearchRouterNetwork: URLRequestConvertible {
         
         let urlComponents = NSURLComponents(string: Constant.baseURL)!
         switch self{
-        case .getRecipe(let query):
+        case .getRecipe(let query,let health):
+            
             urlComponents.queryItems = [
                 URLQueryItem(name: "type", value: "public"),
                 URLQueryItem(name: "q", value: query.joined(separator: " ")),
                 URLQueryItem(name: "app_id", value: Constant.appId),
                 URLQueryItem(name: "app_key", value: Constant.app_key),
-                //  URLQueryItem(name: "health", value: "low-sugar")
+                URLQueryItem(name: "health", value: health)
             ]
+            if health == "all" || health == ""{
+                urlComponents.queryItems?.removeLast()
+            }
         }
-        return urlComponents.url!// returns
+        return urlComponents.url!
     }
     
     var encoding: ParameterEncoding {

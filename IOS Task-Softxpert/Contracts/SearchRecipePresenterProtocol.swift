@@ -12,6 +12,7 @@ protocol SearchRecipePresenterProtocol: AnyObject {
     var view: SearchRecipeViewProtocol?{get set}
     var numberOfRows: Int{get}
     var query :[String]{get set}
+    var health:String{get set}
     func viewDidLoad()
     func configure(cell: SearchRecipeCellView, indexPath: IndexPath)
     

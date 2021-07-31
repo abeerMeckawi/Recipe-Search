@@ -12,13 +12,14 @@ class SearchInteractor: SearchRecipeInteractorInputProtocol{
     weak var presenter:SearchRecipeInteractorOutputProtocol?
     private let searchNetwork = SearchNetwork()
     
-    func getRecipes(query:[String]) {
-        searchNetwork.getRecipes(query: query) { [weak self] result in
+    func getRecipes(query:[String],health:String) {
+        searchNetwork.getRecipes(query: query,health: health) { [weak self] result in
             guard let self = self else { return }
             switch result {
             case .success(let food):
                 if let hits = food.hits{
-                    self.presenter?.searchFetchedSuccessfully(hits:hits)}
+                    self.presenter?.searchFetchedSuccessfully(hits:hits)
+                }
             case .failure(let error):
                 self.presenter?.searchFetchingFailed(withError: error)
             }
