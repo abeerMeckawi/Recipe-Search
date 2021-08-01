@@ -9,4 +9,6 @@ import Foundation
 
 protocol SearchRecipeRouterProtocol{
     
+    func presentRecipeDetail(from view: SearchRecipeViewProtocol, for hit: Hits)
+
 }

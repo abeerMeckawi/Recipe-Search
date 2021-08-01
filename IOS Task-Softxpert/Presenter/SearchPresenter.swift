@@ -8,8 +8,8 @@
 import Foundation
 
 
-class SearchPresenter: SearchRecipePresenterProtocol, SearchRecipeInteractorOutputProtocol{
-
+class SearchPresenter: SearchRecipePresenterProtocol{
+  
     weak var view: SearchRecipeViewProtocol?
     private let interactor : SearchRecipeInteractorInputProtocol
     private let router: SearchRecipeRouterProtocol
@@ -31,7 +31,23 @@ class SearchPresenter: SearchRecipePresenterProtocol, SearchRecipeInteractorOutp
         view?.showLoadingIndicator()
         interactor.getRecipes(query: query,health: health)
     }
+        
+    func configure(cell: SearchRecipeCellView, indexPath: IndexPath) {
+        let hit = hits[indexPath.row]
+        let viewModel = SearchViewModel(hit: hit)
+        cell.configure(viewModel: viewModel)
+    }
+    
+    func showRecipeDetails(indexPath :IndexPath) {
+        guard let view = view else { return }
+        let hit = hits[indexPath.row]
+        router.presentRecipeDetail(from: view, for: hit)
+    }
+    
+}
 
+extension SearchPresenter :SearchRecipeInteractorOutputProtocol{
+    
     func searchFetchedSuccessfully(hits: [Hits]) {
         if hits.count == 0{
             view?.createAlert(message:"Not Data Avaliable For This Recipe")
@@ -45,13 +61,6 @@ class SearchPresenter: SearchRecipePresenterProtocol, SearchRecipeInteractorOutp
     func searchFetchingFailed(withError error: Error) {
         view?.hideLoadingIndicator()
         view?.createAlert(message:"Try Agin Failed to Fetch Data")
-    }
-    
-    func configure(cell: SearchRecipeCellView, indexPath: IndexPath) {
-        let hit = hits[indexPath.row]
-        let viewModel = SearchViewModel(hit: hit)
-        cell.configure(viewModel: viewModel)
-        
     }
     
 }

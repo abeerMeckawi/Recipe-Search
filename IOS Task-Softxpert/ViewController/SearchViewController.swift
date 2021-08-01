@@ -83,6 +83,9 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         presenter.configure(cell: cell, indexPath: indexPath)
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter.showRecipeDetails(indexPath: indexPath)
+    }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 138
@@ -110,7 +113,6 @@ extension SearchViewController: SearchRecipeViewProtocol{
         alertController.addAction(UIAlertAction(title: "OK",style: .default))
         self.present(alertController, animated: true, completion: nil)
     }
-    
 }
 
 extension UIViewController {

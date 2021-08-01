@@ -8,5 +8,6 @@
 import Foundation
 
 protocol SearchRecipeCellView {
+    
     func configure(viewModel: SearchViewModel)
 }

@@ -22,4 +22,12 @@ class SearchRouter: SearchRecipeRouterProtocol {
          return view
      }
     
+    func presentRecipeDetail(from view: SearchRecipeViewProtocol, for hit: Hits) {
+         
+         let view = RecipeDetailRouter.createModule(hit: hit)
+
+        viewController?.navigationController?.pushViewController(view, animated: true)
+     }
+    
+    
 }

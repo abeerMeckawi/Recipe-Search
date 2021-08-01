@@ -124,6 +124,84 @@
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="22.767857142857142"/>
         </scene>
+        <!--Recipes Details-->
+        <scene sceneID="0oE-Sq-ppY">
+            <objects>
+                <viewController storyboardIdentifier="RecipesDetailsViewController" id="h3M-sw-UAB" customClass="RecipesDetailsViewController" customModule="IOS_Task_Softxpert" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DYY-AN-6Ih">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="77c-E6-Ie2">
+                                <rect key="frame" x="0.0" y="44" width="415" height="197"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="197" id="Njl-wZ-qQG"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFQ-HP-n6k">
+                                <rect key="frame" x="93" y="778" width="229" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Recipes Website"/>
+                                <connections>
+                                    <action selector="goToWebsite:" destination="h3M-sw-UAB" eventType="touchUpInside" id="hHR-KH-CRa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipe Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Rd-2t-NCw">
+                                <rect key="frame" x="20" y="282" width="164" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ingredients" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGg-kA-E0S">
+                                <rect key="frame" x="20" y="351" width="120" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oei-sy-iZ8">
+                                <rect key="frame" x="20" y="410" width="375" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1ZE-T6-TmR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1ZE-T6-TmR" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8Rd-2t-NCw" secondAttribute="trailing" symbolic="YES" id="3w5-qx-Edw"/>
+                            <constraint firstItem="1ZE-T6-TmR" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eGg-kA-E0S" secondAttribute="trailing" symbolic="YES" id="6et-V0-eQb"/>
+                            <constraint firstItem="eGg-kA-E0S" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Oei-sy-iZ8" secondAttribute="leading" id="82z-v4-jaL"/>
+                            <constraint firstItem="8Rd-2t-NCw" firstAttribute="leading" secondItem="DYY-AN-6Ih" secondAttribute="leadingMargin" id="A1v-W6-Aoh"/>
+                            <constraint firstItem="Oei-sy-iZ8" firstAttribute="top" secondItem="eGg-kA-E0S" secondAttribute="bottom" constant="29" id="B77-Ok-K8F"/>
+                            <constraint firstItem="Oei-sy-iZ8" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="DYY-AN-6Ih" secondAttribute="trailingMargin" id="Ce3-nv-kN9"/>
+                            <constraint firstItem="77c-E6-Ie2" firstAttribute="centerX" secondItem="Oei-sy-iZ8" secondAttribute="centerX" id="EBg-i6-rtK"/>
+                            <constraint firstItem="8Rd-2t-NCw" firstAttribute="top" secondItem="77c-E6-Ie2" secondAttribute="bottom" constant="41" id="GGc-8p-fF3"/>
+                            <constraint firstItem="77c-E6-Ie2" firstAttribute="leading" secondItem="1ZE-T6-TmR" secondAttribute="leading" id="MBq-Lh-y57"/>
+                            <constraint firstItem="77c-E6-Ie2" firstAttribute="top" secondItem="1ZE-T6-TmR" secondAttribute="top" id="U7c-A5-hYq"/>
+                            <constraint firstItem="Oei-sy-iZ8" firstAttribute="centerX" secondItem="SFQ-HP-n6k" secondAttribute="centerX" id="Ubo-DK-FmV"/>
+                            <constraint firstItem="8Rd-2t-NCw" firstAttribute="leading" secondItem="eGg-kA-E0S" secondAttribute="leading" id="X2F-Hf-M2f"/>
+                            <constraint firstItem="eGg-kA-E0S" firstAttribute="top" secondItem="8Rd-2t-NCw" secondAttribute="bottom" constant="33" id="XKM-I4-hik"/>
+                            <constraint firstItem="SFQ-HP-n6k" firstAttribute="leading" secondItem="1ZE-T6-TmR" secondAttribute="leading" constant="93" id="XUg-Us-SAQ"/>
+                            <constraint firstItem="1ZE-T6-TmR" firstAttribute="bottom" secondItem="SFQ-HP-n6k" secondAttribute="bottom" constant="33" id="abn-nv-y5C"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Recipes Details" id="TwD-sh-gXm">
+                        <barButtonItem key="rightBarButtonItem" title="Share" id="3QK-wk-nGs">
+                            <connections>
+                                <action selector="shareRecipe:" destination="h3M-sw-UAB" id="If6-8j-pWn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imgRecipeDetails" destination="77c-E6-Ie2" id="PXh-JW-MSt"/>
+                        <outlet property="lblRecipeDetailsTitle" destination="8Rd-2t-NCw" id="1mp-BY-OJm"/>
+                        <outlet property="lblRecipeIngredient" destination="Oei-sy-iZ8" id="vZ3-aJ-jvh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DLf-yp-cch" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1817" y="23"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="05a-hl-xrX">
             <objects>

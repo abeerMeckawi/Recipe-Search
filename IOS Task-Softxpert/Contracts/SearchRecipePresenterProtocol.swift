@@ -15,5 +15,6 @@ protocol SearchRecipePresenterProtocol: AnyObject {
     var health:String{get set}
     func viewDidLoad()
     func configure(cell: SearchRecipeCellView, indexPath: IndexPath)
+    func showRecipeDetails(indexPath :IndexPath)
     
 }
