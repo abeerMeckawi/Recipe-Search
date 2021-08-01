@@ -44,6 +44,8 @@ class SearchPresenter: SearchRecipePresenterProtocol{
         router.presentRecipeDetail(from: view, for: hit)
     }
     
+    
+    
 }
 
 extension SearchPresenter :SearchRecipeInteractorOutputProtocol{

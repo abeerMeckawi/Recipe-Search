@@ -11,13 +11,14 @@ protocol RecipeDetailViewProtocol: AnyObject {
     
     var presenter: RecipeDetailPresenterProtocol? { get set }
     func showRecipeDetails(recipe: SearchViewModel)
+    func openSafari()
+    func shareUrl()
 }
 
 protocol RecipeDetailPresenterProtocol: AnyObject {
     
     var view: RecipeDetailViewProtocol? { get set }
-    var interactor: RecipeDetailInteractorInputProtocol? { get set}
-    var router: RecipeDetailRouterProtocol? { get set }
+    var urlStr : String {get}
     func viewDidLoad()
 }
 
