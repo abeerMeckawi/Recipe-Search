@@ -46,6 +46,7 @@ extension RecipesDetailsViewController: RecipeDetailViewProtocol{
             present(safariVC, animated: true)
         }
     }
+    
     func shareUrl() {
         if let shareUrl :URL = URL(string: presenter!.urlStr){
         let activityViewController = UIActivityViewController(activityItems : [shareUrl], applicationActivities: nil)
@@ -58,7 +59,5 @@ extension RecipesDetailsViewController: RecipeDetailViewProtocol{
 
         self.present(activityViewController, animated: true, completion: nil)
         }
-    }
-    
-    
+    }  
 }

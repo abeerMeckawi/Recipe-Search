@@ -7,7 +7,7 @@ target 'IOS Task-Softxpert' do
   # Pods for IOS Task-Softxpert
      pod 'Alamofire'
      pod 'SDWebImage', '~> 5.0'
-
+     pod 'DropDown'
   target 'IOS Task-SoftxpertTests' do
     inherit! :search_paths
     # Pods for testing
