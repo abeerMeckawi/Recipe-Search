@@ -37,6 +37,12 @@
 		7C8914C926B4BE6800076FF1 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8914C826B4BE6800076FF1 /* Food.swift */; };
 		7C8914CB26B4BEA200076FF1 /* Hits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8914CA26B4BEA200076FF1 /* Hits.swift */; };
 		7CE85B9F26B5D55D0037D209 /* RecipesDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE85B9E26B5D55D0037D209 /* RecipesDetailsViewController.swift */; };
+		7CEAB70126B7529800D0758D /* SearchDropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEAB6FF26B7529800D0758D /* SearchDropDownCell.swift */; };
+		7CEAB70226B7529800D0758D /* SearchDropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CEAB70026B7529800D0758D /* SearchDropDownCell.xib */; };
+		7CEAB70526B76C6800D0758D /* HidenKeyboardOnTouchExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEAB70426B76C6800D0758D /* HidenKeyboardOnTouchExtention.swift */; };
+		7CEAB70726B76CE100D0758D /* SearchVC+SearchPresenterProtocolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEAB70626B76CE100D0758D /* SearchVC+SearchPresenterProtocolExtension.swift */; };
+		7CEAB70926B76D3500D0758D /* SearchHistoryExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEAB70826B76D3500D0758D /* SearchHistoryExtention.swift */; };
+		7CEAB70B26B76DBA00D0758D /* ValidationSearchBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEAB70A26B76DBA00D0758D /* ValidationSearchBarExtension.swift */; };
 		D94C03E17911B3CA459531F5 /* Pods_IOS_Task_Softxpert_IOS_Task_SoftxpertUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAB554D21E3BE1DF7EA7957 /* Pods_IOS_Task_Softxpert_IOS_Task_SoftxpertUITests.framework */; };
 		E66167D4E2E11E8D1E99984F /* Pods_IOS_Task_SoftxpertTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C48C6D4C2D73A500CE0747A /* Pods_IOS_Task_SoftxpertTests.framework */; };
 /* End PBXBuildFile section */
@@ -100,6 +106,12 @@
 		7C8914C826B4BE6800076FF1 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		7C8914CA26B4BEA200076FF1 /* Hits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hits.swift; sourceTree = "<group>"; };
 		7CE85B9E26B5D55D0037D209 /* RecipesDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesDetailsViewController.swift; sourceTree = "<group>"; };
+		7CEAB6FF26B7529800D0758D /* SearchDropDownCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDropDownCell.swift; sourceTree = "<group>"; };
+		7CEAB70026B7529800D0758D /* SearchDropDownCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchDropDownCell.xib; sourceTree = "<group>"; };
+		7CEAB70426B76C6800D0758D /* HidenKeyboardOnTouchExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HidenKeyboardOnTouchExtention.swift; sourceTree = "<group>"; };
+		7CEAB70626B76CE100D0758D /* SearchVC+SearchPresenterProtocolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchVC+SearchPresenterProtocolExtension.swift"; sourceTree = "<group>"; };
+		7CEAB70826B76D3500D0758D /* SearchHistoryExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryExtention.swift; sourceTree = "<group>"; };
+		7CEAB70A26B76DBA00D0758D /* ValidationSearchBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationSearchBarExtension.swift; sourceTree = "<group>"; };
 		98CF82B6A198E35357F3CFC4 /* Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests.release.xcconfig"; path = "Target Support Files/Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests/Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B8B0483F0CE2A3AB4D4E02E1 /* Pods_IOS_Task_Softxpert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_Task_Softxpert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB826B672DD4C0B97D8C08E /* Pods-IOS Task-Softxpert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS Task-Softxpert.debug.xcconfig"; path = "Target Support Files/Pods-IOS Task-Softxpert/Pods-IOS Task-Softxpert.debug.xcconfig"; sourceTree = "<group>"; };
@@ -172,6 +184,7 @@
 				7C75D45426B29C2D005296BB /* Presenter */,
 				7C75D45626B29C76005296BB /* Interactor */,
 				7C75D45526B29C3C005296BB /* Router */,
+				7CEAB70326B76C2700D0758D /* Extentions */,
 				7C75D45326B29BDA005296BB /* Contracts */,
 				7C75D44D26B29AE4005296BB /* View */,
 				7C75D45126B29B8B005296BB /* Model */,
@@ -231,6 +244,7 @@
 			children = (
 				7C75D42026B287F6005296BB /* Main.storyboard */,
 				7C75D42526B287FA005296BB /* LaunchScreen.storyboard */,
+				7CEAB6FE26B751F100D0758D /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -318,6 +332,7 @@
 			isa = PBXGroup;
 			children = (
 				7C75D45A26B2C331005296BB /* SearchTableViewCell.swift */,
+				7CEAB6FF26B7529800D0758D /* SearchDropDownCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -328,6 +343,25 @@
 				7C75D46226B2E943005296BB /* Constant.swift */,
 			);
 			path = Constains;
+			sourceTree = "<group>";
+		};
+		7CEAB6FE26B751F100D0758D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7CEAB70026B7529800D0758D /* SearchDropDownCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		7CEAB70326B76C2700D0758D /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				7CEAB70426B76C6800D0758D /* HidenKeyboardOnTouchExtention.swift */,
+				7CEAB70626B76CE100D0758D /* SearchVC+SearchPresenterProtocolExtension.swift */,
+				7CEAB70826B76D3500D0758D /* SearchHistoryExtention.swift */,
+				7CEAB70A26B76DBA00D0758D /* ValidationSearchBarExtension.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 		FAB39B5336619284FED35D32 /* Pods */ = {
@@ -453,6 +487,7 @@
 			files = (
 				7C75D42726B287FA005296BB /* LaunchScreen.storyboard in Resources */,
 				7C75D42426B287FA005296BB /* Assets.xcassets in Resources */,
+				7CEAB70226B7529800D0758D /* SearchDropDownCell.xib in Resources */,
 				7C75D42226B287F6005296BB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -584,17 +619,21 @@
 				7C75D47E26B306BC005296BB /* SearchRecipeInteractorOutputProtocol.swift in Sources */,
 				7C762A0626B5F91200E072AF /* RecipeDetailsPresenter.swift in Sources */,
 				7C75D45B26B2C331005296BB /* SearchTableViewCell.swift in Sources */,
+				7CEAB70526B76C6800D0758D /* HidenKeyboardOnTouchExtention.swift in Sources */,
 				7C762A0A26B5FBDC00E072AF /* RecipeDetailsRouter.swift in Sources */,
 				7C75D45826B29D7B005296BB /* SearchViewController.swift in Sources */,
+				7CEAB70B26B76DBA00D0758D /* ValidationSearchBarExtension.swift in Sources */,
 				7C75D41B26B287F6005296BB /* AppDelegate.swift in Sources */,
 				7C75D47126B30465005296BB /* SearchInteractor.swift in Sources */,
 				7C8914CB26B4BEA200076FF1 /* Hits.swift in Sources */,
+				7CEAB70926B76D3500D0758D /* SearchHistoryExtention.swift in Sources */,
 				7C8914C926B4BE6800076FF1 /* Food.swift in Sources */,
 				7C75D47526B305A4005296BB /* SearchRecipeView.Protocol.swift in Sources */,
 				7C75D46D26B2FCB2005296BB /* NetworkLayer.swift in Sources */,
 				7C75D47926B30637005296BB /* SearchRecipeRouterProtocol.swift in Sources */,
 				7C75D45D26B2CC9D005296BB /* Recipe.swift in Sources */,
 				7C75D47326B3049B005296BB /* SearchRouter.swift in Sources */,
+				7CEAB70726B76CE100D0758D /* SearchVC+SearchPresenterProtocolExtension.swift in Sources */,
 				7C762A0426B5F6E900E072AF /* RecipesDetailsProtocols.swift in Sources */,
 				7C75D46326B2E943005296BB /* Constant.swift in Sources */,
 				7CE85B9F26B5D55D0037D209 /* RecipesDetailsViewController.swift in Sources */,
@@ -605,6 +644,7 @@
 				7C75D47B26B30667005296BB /* SearchRecipeInteractorInputProtocol.swift in Sources */,
 				7C4045D126B45D250061E6FC /* SearchNetwork.swift in Sources */,
 				7C762A0826B5F9F100E072AF /* RecipeDetailsInteractor.swift in Sources */,
+				7CEAB70126B7529800D0758D /* SearchDropDownCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

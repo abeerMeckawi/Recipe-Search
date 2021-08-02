@@ -11,8 +11,8 @@ import DropDown
 class SearchViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
     
     var presenter: SearchRecipePresenterProtocol!
+    let activityIndicator = UIActivityIndicatorView(style: .gray)
     var dropdown = DropDown()
-
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var searchTableView: UITableView!
     
@@ -22,34 +22,16 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         searchTableView.delegate = self
         searchBar.delegate = self
         dropdownCoordinate()
-        self.hideKeyboardWhenTappedAround()
+        hideKeyboardWhenTappedAround()
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        dropdown.dataSource = presenter.getSearchHistory().reversed()
-        if presenter.recentHistory.count != 0 {
-            dropdown.show()
-        }
+        showSearchHistory()
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         let input = searchBar.text!
-        do {
-            let regex = try NSRegularExpression(pattern: ".*[^A-Za-z ].*", options: [])
-            if regex.firstMatch(in: input, options: [], range: NSMakeRange(0, searchBar.text!.count)) == nil{
-                if !input.isEmpty {
-                    presenter.query = input.components(separatedBy: " ")
-                }else{
-                    createAlert(message: "Enter Your Recipe For Search")
-                }
-                presenter.viewDidLoad()
-            }else {
-                createAlert(message: "Only English Letter and Space are Allowed")
-            }
-        }
-        catch {
-            print("error")
-        }
+        validation(input: input)
         dropdown.hide()
         presenter.addSearchHistory(input: input)
     }
@@ -75,7 +57,6 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         default:
             break
         }
-        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -94,50 +75,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 138
     }
-
-    func dropdownCoordinate(){
-        dropdown.anchorView = searchBar
-        dropdown.bottomOffset = CGPoint(x: 0, y:(dropdown.anchorView?.plainView.bounds.height)!)
-        dropdown.backgroundColor = .white
-        dropdown.direction = .bottom
-        
-        dropdown.selectionAction = {(index: Int, item: String) in
-            self.searchBar.text = item
-        }
-    }
+    
 }
 
-extension SearchViewController: SearchRecipeViewProtocol{
 
-    func showLoadingIndicator() {
-        print("Should Show User indecator")
-        //Implement any loading indecator
-    }
-    
-    func hideLoadingIndicator() {
-        print("Should Hide  Loading indecator")
-    }
-    
-    func reloadData() {
-        searchTableView.reloadData()
-    }
-    
-    func createAlert(message : String) {
-        let alertController = UIAlertController(title: "Alert", message:message, preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "OK",style: .default))
-        alertController.view.layoutIfNeeded()
-        self.present(alertController, animated: true, completion: nil)
-    }
-}
-
-extension UIViewController {
-    func hideKeyboardWhenTappedAround() {
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
-        tap.cancelsTouchesInView = false
-        view.addGestureRecognizer(tap)
-    }
-    
-    @objc func dismissKeyboard() {
-        view.endEditing(true)
-    }
-}

@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 class SearchPresenter: SearchRecipePresenterProtocol{
     
     weak var view: SearchRecipeViewProtocol?
