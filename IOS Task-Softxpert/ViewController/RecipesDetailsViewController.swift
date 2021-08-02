@@ -19,6 +19,7 @@ class RecipesDetailsViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.viewDidLoad()
+        lblRecipeIngredient.sizeToFit()
     }
     
     @IBAction func shareRecipe(_ sender: Any) {

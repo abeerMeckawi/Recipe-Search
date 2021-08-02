@@ -20,7 +20,6 @@ class SearchTableViewCell: UITableViewCell,SearchRecipeCellView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
     
     func configure(viewModel: SearchViewModel) {
@@ -28,7 +27,7 @@ class SearchTableViewCell: UITableViewCell,SearchRecipeCellView {
         imgRecipe.sd_setImage(with:viewModel.image, placeholderImage: UIImage(named: "placeholder.png"))
         lblRecipeTitle.text = viewModel.label
         lblRecipeSource.text = viewModel.source
-        lblRecipeHeaalth.text = viewModel.healthLabels?.joined(separator: ",")
+        lblRecipeHeaalth.text = viewModel.healthLabels?[0...3].joined(separator: ",")
     }
     
 

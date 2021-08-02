@@ -22,7 +22,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         searchTableView.delegate = self
         searchBar.delegate = self
         dropdownCoordinate()
-        hideKeyboardWhenTappedAround()
+        self.hideKeyboardWhenTappedAround()
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
@@ -73,7 +73,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 138
+        return 155
     }
     
 }

@@ -14,7 +14,7 @@ extension SearchViewController: SearchRecipeViewProtocol{
         activityIndicator.startAnimating()
         if #available(iOS 13.0, *) {
             activityIndicator.style = .large
-            activityIndicator.color = .red
+            activityIndicator.color = .green
         }
     }
     
