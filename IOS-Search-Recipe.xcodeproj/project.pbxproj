@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3CE838C07988D598A33E2CA1 /* Pods_IOS_Task_Softxpert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8B0483F0CE2A3AB4D4E02E1 /* Pods_IOS_Task_Softxpert.framework */; };
+		1532FADC1B1FCC4ECCC010ED /* Pods_IOS_Search_Recipe_IOS_Search_RecipeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189D98A7401F7348BCCC21E4 /* Pods_IOS_Search_Recipe_IOS_Search_RecipeUITests.framework */; };
+		18553F01C4F30970939A4A58 /* Pods_IOS_Search_Recipe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7BDB9008CF6F23BA46397E0 /* Pods_IOS_Search_Recipe.framework */; };
 		7C37F5A326B8BDED00B29B6D /* NetworkTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C37F5A226B8BDED00B29B6D /* NetworkTest.swift */; };
 		7C37F5A526B8BE0300B29B6D /* MockUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C37F5A426B8BE0300B29B6D /* MockUnitTest.swift */; };
 		7C37F5A726B8BE3500B29B6D /* JsonFileTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 7C37F5A626B8BE3500B29B6D /* JsonFileTest.json */; };
@@ -46,8 +47,7 @@
 		7CEAB70726B76CE100D0758D /* SearchVC+SearchPresenterProtocolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEAB70626B76CE100D0758D /* SearchVC+SearchPresenterProtocolExtension.swift */; };
 		7CEAB70926B76D3500D0758D /* SearchHistoryExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEAB70826B76D3500D0758D /* SearchHistoryExtention.swift */; };
 		7CEAB70B26B76DBA00D0758D /* ValidationSearchBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEAB70A26B76DBA00D0758D /* ValidationSearchBarExtension.swift */; };
-		D94C03E17911B3CA459531F5 /* Pods_IOS_Task_Softxpert_IOS_Task_SoftxpertUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAB554D21E3BE1DF7EA7957 /* Pods_IOS_Task_Softxpert_IOS_Task_SoftxpertUITests.framework */; };
-		E66167D4E2E11E8D1E99984F /* Pods_IOS_Task_SoftxpertTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C48C6D4C2D73A500CE0747A /* Pods_IOS_Task_SoftxpertTests.framework */; };
+		8D6E65E89F0213EC7C6EA00E /* Pods_IOS_Search_RecipeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9D1C802EA2D58B468DE68F /* Pods_IOS_Search_RecipeTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,25 +69,27 @@
 
 /* Begin PBXFileReference section */
 		0C1E85E66655011EABCC7C3F /* Pods-IOS Task-SoftxpertTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS Task-SoftxpertTests.debug.xcconfig"; path = "Target Support Files/Pods-IOS Task-SoftxpertTests/Pods-IOS Task-SoftxpertTests.debug.xcconfig"; sourceTree = "<group>"; };
-		0C48C6D4C2D73A500CE0747A /* Pods_IOS_Task_SoftxpertTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_Task_SoftxpertTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1002C6C68D6C732F28FF6303 /* Pods-IOS Task-Softxpert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS Task-Softxpert.release.xcconfig"; path = "Target Support Files/Pods-IOS Task-Softxpert/Pods-IOS Task-Softxpert.release.xcconfig"; sourceTree = "<group>"; };
+		1205F064F752025BADAD7CB1 /* Pods-IOS-Search-Recipe-IOS-Search-RecipeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS-Search-Recipe-IOS-Search-RecipeUITests.release.xcconfig"; path = "Target Support Files/Pods-IOS-Search-Recipe-IOS-Search-RecipeUITests/Pods-IOS-Search-Recipe-IOS-Search-RecipeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		14605FAA09DDFB129453DDA1 /* Pods-IOS-Search-Recipe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS-Search-Recipe.release.xcconfig"; path = "Target Support Files/Pods-IOS-Search-Recipe/Pods-IOS-Search-Recipe.release.xcconfig"; sourceTree = "<group>"; };
+		189D98A7401F7348BCCC21E4 /* Pods_IOS_Search_Recipe_IOS_Search_RecipeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_Search_Recipe_IOS_Search_RecipeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34196E86226432F71889AFAF /* Pods-IOS-Search-RecipeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS-Search-RecipeTests.release.xcconfig"; path = "Target Support Files/Pods-IOS-Search-RecipeTests/Pods-IOS-Search-RecipeTests.release.xcconfig"; sourceTree = "<group>"; };
 		34459663DF13B6C0DFC6B5EA /* Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests.debug.xcconfig"; path = "Target Support Files/Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests/Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		4BAB554D21E3BE1DF7EA7957 /* Pods_IOS_Task_Softxpert_IOS_Task_SoftxpertUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_Task_Softxpert_IOS_Task_SoftxpertUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60B929F855BC08293FD3F39A /* Pods-IOS Task-SoftxpertTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS Task-SoftxpertTests.release.xcconfig"; path = "Target Support Files/Pods-IOS Task-SoftxpertTests/Pods-IOS Task-SoftxpertTests.release.xcconfig"; sourceTree = "<group>"; };
 		7C37F5A226B8BDED00B29B6D /* NetworkTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTest.swift; sourceTree = "<group>"; };
 		7C37F5A426B8BE0300B29B6D /* MockUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUnitTest.swift; sourceTree = "<group>"; };
 		7C37F5A626B8BE3500B29B6D /* JsonFileTest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = JsonFileTest.json; sourceTree = "<group>"; };
 		7C4045D026B45D240061E6FC /* SearchNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNetwork.swift; sourceTree = "<group>"; };
-		7C75D41726B287F6005296BB /* IOS Task-Softxpert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS Task-Softxpert.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C75D41726B287F6005296BB /* IOS-Search-Recipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS-Search-Recipe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C75D41A26B287F6005296BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C75D42126B287F6005296BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C75D42326B287FA005296BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C75D42626B287FA005296BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C75D42826B287FA005296BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7C75D42D26B287FA005296BB /* IOS Task-SoftxpertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IOS Task-SoftxpertTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C75D42D26B287FA005296BB /* IOS-Search-RecipeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IOS-Search-RecipeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C75D43126B287FA005296BB /* IOS_Task_SoftxpertTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_Task_SoftxpertTests.swift; sourceTree = "<group>"; };
 		7C75D43326B287FA005296BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7C75D43826B287FA005296BB /* IOS Task-SoftxpertUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IOS Task-SoftxpertUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C75D43826B287FA005296BB /* IOS-Search-RecipeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IOS-Search-RecipeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C75D43C26B287FA005296BB /* IOS_Task_SoftxpertUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_Task_SoftxpertUITests.swift; sourceTree = "<group>"; };
 		7C75D43E26B287FA005296BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C75D45726B29D7B005296BB /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -119,8 +121,12 @@
 		7CEAB70826B76D3500D0758D /* SearchHistoryExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryExtention.swift; sourceTree = "<group>"; };
 		7CEAB70A26B76DBA00D0758D /* ValidationSearchBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationSearchBarExtension.swift; sourceTree = "<group>"; };
 		98CF82B6A198E35357F3CFC4 /* Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests.release.xcconfig"; path = "Target Support Files/Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests/Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests.release.xcconfig"; sourceTree = "<group>"; };
-		B8B0483F0CE2A3AB4D4E02E1 /* Pods_IOS_Task_Softxpert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_Task_Softxpert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EBEFF8FDC1F2747DFC31F3B /* Pods-IOS-Search-Recipe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS-Search-Recipe.debug.xcconfig"; path = "Target Support Files/Pods-IOS-Search-Recipe/Pods-IOS-Search-Recipe.debug.xcconfig"; sourceTree = "<group>"; };
+		B7BDB9008CF6F23BA46397E0 /* Pods_IOS_Search_Recipe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_Search_Recipe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3C3E8EB9A78B64B9345922F /* Pods-IOS-Search-Recipe-IOS-Search-RecipeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS-Search-Recipe-IOS-Search-RecipeUITests.debug.xcconfig"; path = "Target Support Files/Pods-IOS-Search-Recipe-IOS-Search-RecipeUITests/Pods-IOS-Search-Recipe-IOS-Search-RecipeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB9D1C802EA2D58B468DE68F /* Pods_IOS_Search_RecipeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_Search_RecipeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB826B672DD4C0B97D8C08E /* Pods-IOS Task-Softxpert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS Task-Softxpert.debug.xcconfig"; path = "Target Support Files/Pods-IOS Task-Softxpert/Pods-IOS Task-Softxpert.debug.xcconfig"; sourceTree = "<group>"; };
+		F05A8FBE131F3F39247B18BD /* Pods-IOS-Search-RecipeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS-Search-RecipeTests.debug.xcconfig"; path = "Target Support Files/Pods-IOS-Search-RecipeTests/Pods-IOS-Search-RecipeTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CE838C07988D598A33E2CA1 /* Pods_IOS_Task_Softxpert.framework in Frameworks */,
+				18553F01C4F30970939A4A58 /* Pods_IOS_Search_Recipe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E66167D4E2E11E8D1E99984F /* Pods_IOS_Task_SoftxpertTests.framework in Frameworks */,
+				8D6E65E89F0213EC7C6EA00E /* Pods_IOS_Search_RecipeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +150,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D94C03E17911B3CA459531F5 /* Pods_IOS_Task_Softxpert_IOS_Task_SoftxpertUITests.framework in Frameworks */,
+				1532FADC1B1FCC4ECCC010ED /* Pods_IOS_Search_Recipe_IOS_Search_RecipeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,9 +160,9 @@
 		68896DB356FE302EEF944459 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B8B0483F0CE2A3AB4D4E02E1 /* Pods_IOS_Task_Softxpert.framework */,
-				4BAB554D21E3BE1DF7EA7957 /* Pods_IOS_Task_Softxpert_IOS_Task_SoftxpertUITests.framework */,
-				0C48C6D4C2D73A500CE0747A /* Pods_IOS_Task_SoftxpertTests.framework */,
+				B7BDB9008CF6F23BA46397E0 /* Pods_IOS_Search_Recipe.framework */,
+				189D98A7401F7348BCCC21E4 /* Pods_IOS_Search_Recipe_IOS_Search_RecipeUITests.framework */,
+				EB9D1C802EA2D58B468DE68F /* Pods_IOS_Search_RecipeTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -164,9 +170,9 @@
 		7C75D40E26B287F6005296BB = {
 			isa = PBXGroup;
 			children = (
-				7C75D41926B287F6005296BB /* IOS Task-Softxpert */,
-				7C75D43026B287FA005296BB /* IOS Task-SoftxpertTests */,
-				7C75D43B26B287FA005296BB /* IOS Task-SoftxpertUITests */,
+				7C75D41926B287F6005296BB /* IOS-Search-Recipe */,
+				7C75D43026B287FA005296BB /* IOS-Search-RecipeTests */,
+				7C75D43B26B287FA005296BB /* IOS-Search-RecipeUITests */,
 				7C75D41826B287F6005296BB /* Products */,
 				FAB39B5336619284FED35D32 /* Pods */,
 				68896DB356FE302EEF944459 /* Frameworks */,
@@ -176,14 +182,14 @@
 		7C75D41826B287F6005296BB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7C75D41726B287F6005296BB /* IOS Task-Softxpert.app */,
-				7C75D42D26B287FA005296BB /* IOS Task-SoftxpertTests.xctest */,
-				7C75D43826B287FA005296BB /* IOS Task-SoftxpertUITests.xctest */,
+				7C75D41726B287F6005296BB /* IOS-Search-Recipe.app */,
+				7C75D42D26B287FA005296BB /* IOS-Search-RecipeTests.xctest */,
+				7C75D43826B287FA005296BB /* IOS-Search-RecipeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7C75D41926B287F6005296BB /* IOS Task-Softxpert */ = {
+		7C75D41926B287F6005296BB /* IOS-Search-Recipe */ = {
 			isa = PBXGroup;
 			children = (
 				7C75D44F26B29B01005296BB /* ViewController */,
@@ -199,10 +205,10 @@
 				7C75D44B26B29A39005296BB /* Resources */,
 				7C75D44A26B29A27005296BB /* Configration */,
 			);
-			path = "IOS Task-Softxpert";
+			path = "IOS-Search-Recipe";
 			sourceTree = "<group>";
 		};
-		7C75D43026B287FA005296BB /* IOS Task-SoftxpertTests */ = {
+		7C75D43026B287FA005296BB /* IOS-Search-RecipeTests */ = {
 			isa = PBXGroup;
 			children = (
 				7C75D43126B287FA005296BB /* IOS_Task_SoftxpertTests.swift */,
@@ -211,17 +217,17 @@
 				7C37F5A426B8BE0300B29B6D /* MockUnitTest.swift */,
 				7C37F5A626B8BE3500B29B6D /* JsonFileTest.json */,
 			);
-			path = "IOS Task-SoftxpertTests";
+			path = "IOS-Search-RecipeTests";
 			sourceTree = "<group>";
 		};
-		7C75D43B26B287FA005296BB /* IOS Task-SoftxpertUITests */ = {
+		7C75D43B26B287FA005296BB /* IOS-Search-RecipeUITests */ = {
 			isa = PBXGroup;
 			children = (
 				7C75D45326B29BDA005296BB /* Contracts */,
 				7C75D43C26B287FA005296BB /* IOS_Task_SoftxpertUITests.swift */,
 				7C75D43E26B287FA005296BB /* Info.plist */,
 			);
-			path = "IOS Task-SoftxpertUITests";
+			path = "IOS-Search-RecipeUITests";
 			sourceTree = "<group>";
 		};
 		7C75D44A26B29A27005296BB /* Configration */ = {
@@ -382,6 +388,12 @@
 				98CF82B6A198E35357F3CFC4 /* Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests.release.xcconfig */,
 				0C1E85E66655011EABCC7C3F /* Pods-IOS Task-SoftxpertTests.debug.xcconfig */,
 				60B929F855BC08293FD3F39A /* Pods-IOS Task-SoftxpertTests.release.xcconfig */,
+				9EBEFF8FDC1F2747DFC31F3B /* Pods-IOS-Search-Recipe.debug.xcconfig */,
+				14605FAA09DDFB129453DDA1 /* Pods-IOS-Search-Recipe.release.xcconfig */,
+				E3C3E8EB9A78B64B9345922F /* Pods-IOS-Search-Recipe-IOS-Search-RecipeUITests.debug.xcconfig */,
+				1205F064F752025BADAD7CB1 /* Pods-IOS-Search-Recipe-IOS-Search-RecipeUITests.release.xcconfig */,
+				F05A8FBE131F3F39247B18BD /* Pods-IOS-Search-RecipeTests.debug.xcconfig */,
+				34196E86226432F71889AFAF /* Pods-IOS-Search-RecipeTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -389,9 +401,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7C75D41626B287F6005296BB /* IOS Task-Softxpert */ = {
+		7C75D41626B287F6005296BB /* IOS-Search-Recipe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7C75D44126B287FA005296BB /* Build configuration list for PBXNativeTarget "IOS Task-Softxpert" */;
+			buildConfigurationList = 7C75D44126B287FA005296BB /* Build configuration list for PBXNativeTarget "IOS-Search-Recipe" */;
 			buildPhases = (
 				EE14C593BB76994DAE023DFA /* [CP] Check Pods Manifest.lock */,
 				7C75D41326B287F6005296BB /* Sources */,
@@ -403,14 +415,14 @@
 			);
 			dependencies = (
 			);
-			name = "IOS Task-Softxpert";
+			name = "IOS-Search-Recipe";
 			productName = "IOS Task-Softxpert";
-			productReference = 7C75D41726B287F6005296BB /* IOS Task-Softxpert.app */;
+			productReference = 7C75D41726B287F6005296BB /* IOS-Search-Recipe.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7C75D42C26B287FA005296BB /* IOS Task-SoftxpertTests */ = {
+		7C75D42C26B287FA005296BB /* IOS-Search-RecipeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7C75D44426B287FA005296BB /* Build configuration list for PBXNativeTarget "IOS Task-SoftxpertTests" */;
+			buildConfigurationList = 7C75D44426B287FA005296BB /* Build configuration list for PBXNativeTarget "IOS-Search-RecipeTests" */;
 			buildPhases = (
 				02CEAE200A22585F1B7F6027 /* [CP] Check Pods Manifest.lock */,
 				7C75D42926B287FA005296BB /* Sources */,
@@ -422,14 +434,14 @@
 			dependencies = (
 				7C75D42F26B287FA005296BB /* PBXTargetDependency */,
 			);
-			name = "IOS Task-SoftxpertTests";
+			name = "IOS-Search-RecipeTests";
 			productName = "IOS Task-SoftxpertTests";
-			productReference = 7C75D42D26B287FA005296BB /* IOS Task-SoftxpertTests.xctest */;
+			productReference = 7C75D42D26B287FA005296BB /* IOS-Search-RecipeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		7C75D43726B287FA005296BB /* IOS Task-SoftxpertUITests */ = {
+		7C75D43726B287FA005296BB /* IOS-Search-RecipeUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7C75D44726B287FA005296BB /* Build configuration list for PBXNativeTarget "IOS Task-SoftxpertUITests" */;
+			buildConfigurationList = 7C75D44726B287FA005296BB /* Build configuration list for PBXNativeTarget "IOS-Search-RecipeUITests" */;
 			buildPhases = (
 				5D28000BD808380CC6E566F7 /* [CP] Check Pods Manifest.lock */,
 				7C75D43426B287FA005296BB /* Sources */,
@@ -442,9 +454,9 @@
 			dependencies = (
 				7C75D43A26B287FA005296BB /* PBXTargetDependency */,
 			);
-			name = "IOS Task-SoftxpertUITests";
+			name = "IOS-Search-RecipeUITests";
 			productName = "IOS Task-SoftxpertUITests";
-			productReference = 7C75D43826B287FA005296BB /* IOS Task-SoftxpertUITests.xctest */;
+			productReference = 7C75D43826B287FA005296BB /* IOS-Search-RecipeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -469,7 +481,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7C75D41226B287F6005296BB /* Build configuration list for PBXProject "IOS Task-Softxpert" */;
+			buildConfigurationList = 7C75D41226B287F6005296BB /* Build configuration list for PBXProject "IOS-Search-Recipe" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -482,9 +494,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7C75D41626B287F6005296BB /* IOS Task-Softxpert */,
-				7C75D42C26B287FA005296BB /* IOS Task-SoftxpertTests */,
-				7C75D43726B287FA005296BB /* IOS Task-SoftxpertUITests */,
+				7C75D41626B287F6005296BB /* IOS-Search-Recipe */,
+				7C75D42C26B287FA005296BB /* IOS-Search-RecipeTests */,
+				7C75D43726B287FA005296BB /* IOS-Search-RecipeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -534,7 +546,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-IOS Task-SoftxpertTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-IOS-Search-RecipeTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -556,7 +568,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-IOS-Search-Recipe-IOS-Search-RecipeUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -569,15 +581,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IOS Task-Softxpert/Pods-IOS Task-Softxpert-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-IOS-Search-Recipe/Pods-IOS-Search-Recipe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IOS Task-Softxpert/Pods-IOS Task-Softxpert-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-IOS-Search-Recipe/Pods-IOS-Search-Recipe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IOS Task-Softxpert/Pods-IOS Task-Softxpert-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IOS-Search-Recipe/Pods-IOS-Search-Recipe-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EE14C593BB76994DAE023DFA /* [CP] Check Pods Manifest.lock */ = {
@@ -595,7 +607,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-IOS Task-Softxpert-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-IOS-Search-Recipe-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -608,15 +620,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests/Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-IOS-Search-Recipe-IOS-Search-RecipeUITests/Pods-IOS-Search-Recipe-IOS-Search-RecipeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests/Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-IOS-Search-Recipe-IOS-Search-RecipeUITests/Pods-IOS-Search-Recipe-IOS-Search-RecipeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests/Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IOS-Search-Recipe-IOS-Search-RecipeUITests/Pods-IOS-Search-Recipe-IOS-Search-RecipeUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -681,12 +693,12 @@
 /* Begin PBXTargetDependency section */
 		7C75D42F26B287FA005296BB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7C75D41626B287F6005296BB /* IOS Task-Softxpert */;
+			target = 7C75D41626B287F6005296BB /* IOS-Search-Recipe */;
 			targetProxy = 7C75D42E26B287FA005296BB /* PBXContainerItemProxy */;
 		};
 		7C75D43A26B287FA005296BB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7C75D41626B287F6005296BB /* IOS Task-Softxpert */;
+			target = 7C75D41626B287F6005296BB /* IOS-Search-Recipe */;
 			targetProxy = 7C75D43926B287FA005296BB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -829,20 +841,20 @@
 		};
 		7C75D44226B287FA005296BB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EBB826B672DD4C0B97D8C08E /* Pods-IOS Task-Softxpert.debug.xcconfig */;
+			baseConfigurationReference = 9EBEFF8FDC1F2747DFC31F3B /* Pods-IOS-Search-Recipe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UUK23973T4;
-				INFOPLIST_FILE = "$(SRCROOT)/IOS Task-Softxpert/Configration/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/IOS-Search-Recipe/Configration/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Learning.IOS-Task-Softxpert";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Learning.IOS-Search-Recipe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -852,20 +864,20 @@
 		};
 		7C75D44326B287FA005296BB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1002C6C68D6C732F28FF6303 /* Pods-IOS Task-Softxpert.release.xcconfig */;
+			baseConfigurationReference = 14605FAA09DDFB129453DDA1 /* Pods-IOS-Search-Recipe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UUK23973T4;
-				INFOPLIST_FILE = "$(SRCROOT)/IOS Task-Softxpert/Configration/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/IOS-Search-Recipe/Configration/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Learning.IOS-Task-Softxpert";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Learning.IOS-Search-Recipe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -875,7 +887,7 @@
 		};
 		7C75D44526B287FA005296BB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C1E85E66655011EABCC7C3F /* Pods-IOS Task-SoftxpertTests.debug.xcconfig */;
+			baseConfigurationReference = F05A8FBE131F3F39247B18BD /* Pods-IOS-Search-RecipeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -891,13 +903,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IOS Task-Softxpert.app/IOS Task-Softxpert";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IOS-Search-Recipe.app/IOS-Search-Recipe";
 			};
 			name = Debug;
 		};
 		7C75D44626B287FA005296BB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60B929F855BC08293FD3F39A /* Pods-IOS Task-SoftxpertTests.release.xcconfig */;
+			baseConfigurationReference = 34196E86226432F71889AFAF /* Pods-IOS-Search-RecipeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -913,13 +925,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IOS Task-Softxpert.app/IOS Task-Softxpert";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IOS-Search-Recipe.app/IOS-Search-Recipe";
 			};
 			name = Release;
 		};
 		7C75D44826B287FA005296BB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34459663DF13B6C0DFC6B5EA /* Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests.debug.xcconfig */;
+			baseConfigurationReference = E3C3E8EB9A78B64B9345922F /* Pods-IOS-Search-Recipe-IOS-Search-RecipeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -939,7 +951,7 @@
 		};
 		7C75D44926B287FA005296BB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98CF82B6A198E35357F3CFC4 /* Pods-IOS Task-Softxpert-IOS Task-SoftxpertUITests.release.xcconfig */;
+			baseConfigurationReference = 1205F064F752025BADAD7CB1 /* Pods-IOS-Search-Recipe-IOS-Search-RecipeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -960,7 +972,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7C75D41226B287F6005296BB /* Build configuration list for PBXProject "IOS Task-Softxpert" */ = {
+		7C75D41226B287F6005296BB /* Build configuration list for PBXProject "IOS-Search-Recipe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7C75D43F26B287FA005296BB /* Debug */,
@@ -969,7 +981,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7C75D44126B287FA005296BB /* Build configuration list for PBXNativeTarget "IOS Task-Softxpert" */ = {
+		7C75D44126B287FA005296BB /* Build configuration list for PBXNativeTarget "IOS-Search-Recipe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7C75D44226B287FA005296BB /* Debug */,
@@ -978,7 +990,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7C75D44426B287FA005296BB /* Build configuration list for PBXNativeTarget "IOS Task-SoftxpertTests" */ = {
+		7C75D44426B287FA005296BB /* Build configuration list for PBXNativeTarget "IOS-Search-RecipeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7C75D44526B287FA005296BB /* Debug */,
@@ -987,7 +999,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7C75D44726B287FA005296BB /* Build configuration list for PBXNativeTarget "IOS Task-SoftxpertUITests" */ = {
+		7C75D44726B287FA005296BB /* Build configuration list for PBXNativeTarget "IOS-Search-RecipeUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7C75D44826B287FA005296BB /* Debug */,
