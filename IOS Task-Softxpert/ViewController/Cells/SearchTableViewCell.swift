@@ -20,6 +20,7 @@ class SearchTableViewCell: UITableViewCell,SearchRecipeCellView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        lblRecipeTitle.sizeToFit()
     }
     
     func configure(viewModel: SearchViewModel) {

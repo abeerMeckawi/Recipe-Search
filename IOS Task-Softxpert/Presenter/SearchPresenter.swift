@@ -42,6 +42,8 @@ class SearchPresenter: SearchRecipePresenterProtocol{
     func addSearchHistory(input: String) {
         if recentHistory.count < 10 {
             recentHistory.append(input)
+        }else if recentHistory.contains(input){
+            recentHistory = getSearchHistory()
         }else{
             recentHistory.removeFirst()
             recentHistory.insert(input, at: recentHistory.count)
