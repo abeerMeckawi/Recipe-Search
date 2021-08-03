@@ -54,8 +54,8 @@
                                                         <constraint firstAttribute="width" constant="125" id="wM4-gZ-GmI"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipe Title Recipe Title Recipe Title " textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GqM-vz-2em">
-                                                    <rect key="frame" x="141" y="21" width="253" height="41"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipe Title" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GqM-vz-2em">
+                                                    <rect key="frame" x="141" y="13" width="253" height="49"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="253" id="hT7-RS-wOZ"/>
                                                     </constraints>
@@ -63,7 +63,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipe HealthRecipe Health Recipe Health" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAV-hU-OA2">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Recipe HealthRecipe Health Recipe Health" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAV-hU-OA2">
                                                     <rect key="frame" x="141" y="96" width="253" height="44"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -80,6 +80,7 @@
                                                 <constraint firstItem="lGP-ft-72Q" firstAttribute="bottom" secondItem="LAV-hU-OA2" secondAttribute="bottom" id="1wZ-MO-nTj"/>
                                                 <constraint firstItem="GqM-vz-2em" firstAttribute="leading" secondItem="lGP-ft-72Q" secondAttribute="trailing" constant="8" symbolic="YES" id="9jF-3a-y0g"/>
                                                 <constraint firstItem="L66-L4-vgS" firstAttribute="trailing" secondItem="LAV-hU-OA2" secondAttribute="trailing" id="BSA-X3-8Po"/>
+                                                <constraint firstItem="GqM-vz-2em" firstAttribute="top" secondItem="rig-5N-6dT" secondAttribute="topMargin" constant="2" id="Blv-79-hXE"/>
                                                 <constraint firstItem="lGP-ft-72Q" firstAttribute="centerY" secondItem="rig-5N-6dT" secondAttribute="centerY" id="DcR-3k-xAI"/>
                                                 <constraint firstItem="lGP-ft-72Q" firstAttribute="top" secondItem="rig-5N-6dT" secondAttribute="topMargin" constant="4" id="OHF-aD-GG5"/>
                                                 <constraint firstItem="L66-L4-vgS" firstAttribute="leading" secondItem="LAV-hU-OA2" secondAttribute="leading" id="PfU-jk-4Ui"/>
@@ -120,6 +121,7 @@
                     <connections>
                         <outlet property="searchBar" destination="Iz3-k7-2in" id="svu-EO-jvj"/>
                         <outlet property="searchTableView" destination="RgO-qq-IeB" id="Otn-OS-twz"/>
+                        <outlet property="segmentControlFilter" destination="mtb-Vl-eLn" id="pNT-73-4KQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

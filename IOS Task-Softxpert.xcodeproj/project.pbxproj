@@ -191,7 +191,6 @@
 				7C75D45626B29C76005296BB /* Interactor */,
 				7C75D45526B29C3C005296BB /* Router */,
 				7CEAB70326B76C2700D0758D /* Extentions */,
-				7C75D45326B29BDA005296BB /* Contracts */,
 				7C75D44D26B29AE4005296BB /* View */,
 				7C75D45126B29B8B005296BB /* Model */,
 				7C75D45026B29B5E005296BB /* POJOs */,
@@ -218,6 +217,7 @@
 		7C75D43B26B287FA005296BB /* IOS Task-SoftxpertUITests */ = {
 			isa = PBXGroup;
 			children = (
+				7C75D45326B29BDA005296BB /* Contracts */,
 				7C75D43C26B287FA005296BB /* IOS_Task_SoftxpertUITests.swift */,
 				7C75D43E26B287FA005296BB /* Info.plist */,
 			);
